@@ -4,7 +4,7 @@ cmsrel CMSSW_7_6_3/src/
 cd CMSSW_7_6_3/src
 cmsenv
 git clone https://github.com/lperrini/EmbeddingWeights.git
-mv EmbeddingWeights/* $CMSSW_BASE
+mv EmbeddingWeights/* .
 scram b -j 9
 ```
 
