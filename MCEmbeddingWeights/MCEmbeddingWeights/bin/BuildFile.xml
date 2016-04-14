@@ -1,0 +1,7 @@
+<bin   file="testMCEmbeddingWeights.cc" name="testMCEmbeddingWeights">
+  <use name="FWCore/FWLite"/>
+  <use name="FWCore/ParameterSet"/>
+  <use name="FWCore/PluginManager"/>
+  <use name="MCEmbeddingWeights/MCEmbeddingWeights"/>
+  <use name="root"/>
+</bin>
