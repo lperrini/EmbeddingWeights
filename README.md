@@ -6,8 +6,8 @@ git clone https://github.com/lperrini/EmbeddingWeights.git
 mv EmbeddingWeights/* $CMSSW_BASE
 scram b -j 9
 
-##run the test code MCEmbeddingWeights/MCEmbeddingWeights/bin/testMCEmbeddingWeights.cc
-##by simply calling:
+####run the test code MCEmbeddingWeights/MCEmbeddingWeights/bin/testMCEmbeddingWeights.cc
+####by simply calling:
 
 testMCEmbeddingWeights
 
