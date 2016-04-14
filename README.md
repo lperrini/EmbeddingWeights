@@ -8,15 +8,13 @@ mv EmbeddingWeights/* $CMSSW_BASE
 scram b -j 9
 ```
 
-**run the test code MCEmbeddingWeights/MCEmbeddingWeights/bin/testMCEmbeddingWeights.cc by simply calling:**
+run the test code MCEmbeddingWeights/MCEmbeddingWeights/bin/testMCEmbeddingWeights.cc by simply calling:
 ```
 testMCEmbeddingWeights
 ```
 
-**test program creates 1000 Z -> mumu toy MC events and fills histograms of the MCEmbeddingWeights without (evtWeight_woTauSpinner) and with (evtWeight_wTauSpinner) taking tau polarization effects into account**
-
-
-**plug in the class in your own analysis code**
+the test program creates 1000 Z -> mumu toy MC events and fills histograms of the MCEmbeddingWeights without (evtWeight_woTauSpinner) and with (evtWeight_wTauSpinner) taking tau polarization effects into account
+If you want to plug-in the class in your own analysis code, do (you find the entire example in the test programm):
 ```
 #include "MCEmbeddingWeights/MCEmbeddingWeights/interface/MCEmbeddingWeights.h"
 int decayMode1 = -999;
