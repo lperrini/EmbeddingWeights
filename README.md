@@ -6,9 +6,10 @@ git clone https://github.com/lperrini/EmbeddingWeights.git
 mv EmbeddingWeights/* $CMSSW_BASE
 scram b -j 9
 
-#run the test code MCEmbeddingWeights/MCEmbeddingWeights/bin/testMCEmbeddingWeights.cc
-#the test program creates 1000 Z -> mumu toy MC events and fills histograms of the MCEmbeddingWeights without 
-#(evtWeight_woTauSpinner) and with (evtWeight_wTauSpinner) taking tau polarization effects into account
+    #run the test code MCEmbeddingWeights/MCEmbeddingWeights/bin/testMCEmbeddingWeights.cc
+    #the test program creates 1000 Z -> mumu toy MC events and fills histograms of the MCEmbeddingWeights without 
+    #(evtWeight_woTauSpinner) and with (evtWeight_wTauSpinner) taking tau polarization effects into account
+
 testMCEmbeddingWeights
 
 #plug in the class in your own analysis code
