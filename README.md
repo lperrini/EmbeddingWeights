@@ -1,10 +1,12 @@
 # EmbeddingWeights
+```
 cmsrel CMSSW_7_6_3/src/
 cd CMSSW_7_6_3/src
 cmsenv
 git clone https://github.com/lperrini/EmbeddingWeights.git
 mv EmbeddingWeights/* $CMSSW_BASE
 scram b -j 9
+```
 
 **run the test code MCEmbeddingWeights/MCEmbeddingWeights/bin/testMCEmbeddingWeights.cc by simply calling:**
 ```
@@ -16,7 +18,7 @@ testMCEmbeddingWeights
 
 **plug in the class in your own analysis code**
 ```
-\#include "MCEmbeddingWeights/MCEmbeddingWeights/interface/MCEmbeddingWeights.h"
+#include "MCEmbeddingWeights/MCEmbeddingWeights/interface/MCEmbeddingWeights.h"
 int decayMode1 = -999;
 int decayMode2 = -999;
 if(isem){ decayMode1=MCEmbeddingWeights::kTauToElecDecay; decayMode2=MCEmbeddingWeights::kTauToMuDecay;}
